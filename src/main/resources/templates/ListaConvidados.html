@@ -18,7 +18,7 @@
                 <div class="form-group">
                     <input type="text" class="form-control"
                            placeholder="Nome" th:field="*{nome}" style="margin-bottom:5px" required/>
-                    <input type="text" class="form-control"
+                    <input type="number" class="form-control" min="0" step="1"
                            placeholder="Acompanhantes" th:field="*{quantidadeAcompanhantes}" style="margin-bottom:5px" required/>
                     <button type="submit"
                             class="btn btn-primary">Adicionar</button>
