@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/convidados")
+@RequestMapping("/")
 public class ConvidadosController {
 
     @Autowired
@@ -27,6 +27,6 @@ public class ConvidadosController {
     @PostMapping
     public String salvar(Convidado convidado){
         this.convidados.save(convidado);
-        return "redirect:/convidados";
+        return "redirect:/";
     }
 }
